@@ -1,0 +1,5 @@
+@ECHO OFF
+PUSHD .
+SET NUM=%1
+IF [%NUM%]==[] SET NUM=1
+FOR /L %%G IN (1,1,%NUM%) DO CD ..
